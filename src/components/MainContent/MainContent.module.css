@@ -1,0 +1,67 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mainImageContainer {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  flex: 2;
+}
+
+.mainImageContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gradientOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 102, 204, 0.8), transparent);
+}
+
+.imageText {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.cardColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  .mainImageContainer {
+    height: 400px;
+  }
+
+  .imageText {
+    font-size: 18px;
+  }
+}

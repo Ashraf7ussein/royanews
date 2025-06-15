@@ -5,9 +5,9 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <div id="main">
+      <main>
         <Outlet />
-      </div>
+      </main>
     </>
   );
 };
