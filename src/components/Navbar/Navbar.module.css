@@ -1,0 +1,137 @@
+.nav {
+  padding: 0 20px;
+  background-color: white;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.colorModeContainer {
+  background-color: #e9e9e9;
+  padding: 2px 7px;
+  border-radius: 25px;
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tabContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.tab {
+  font-weight: bold;
+  font-size: 20px;
+  transition: border-bottom 0.15s ease-in-out;
+}
+
+.tab:hover {
+  border-bottom: 4px solid rgb(14, 23, 104);
+  cursor: pointer;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.actionItem {
+  background-color: rgb(22, 34, 136);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.actionItem:hover {
+  background-color: rgb(14, 23, 104);
+}
+
+.navToggler {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+@media screen and (min-width: 720px) {
+  .colorModeContainer {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .tabContainer {
+    display: none;
+  }
+
+  .navToggler {
+    display: block;
+  }
+}
