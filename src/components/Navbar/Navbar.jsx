@@ -1,11 +1,12 @@
 import { useState } from "react";
 import logo from "../../assets/logo.jpg";
-import styles from "./Navbar.module.css";
 import { IoSunny, IoMoon } from "react-icons/io5";
 import { MdManageSearch } from "react-icons/md";
 import { FaGlobeEurope, FaBars } from "react-icons/fa";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { LuTv } from "react-icons/lu";
+
+import styles from "./Navbar.module.css";
 
 const tabs = [
   "Home",

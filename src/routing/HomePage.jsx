@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar/Navbar";
+import Card from "../components/Card/Card";
 
 const HomePage = () => {
   return (
-    <>
-      <Navbar />
-    </>
+    <div>
+      <Card />
+    </div>
   );
 };
 
