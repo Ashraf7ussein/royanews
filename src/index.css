@@ -8,12 +8,33 @@
   background-color: #242424;
 }
 
+.newsLink {
+  background-color: rgb(22, 34, 136);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  align-self: center;
+}
+
+.newsLink:hover {
+  background-color: rgb(14, 23, 104);
+}
+
+.newsLinkContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ccc;
-  }
-  a:hover {
-    color: #747bff;
   }
 }
