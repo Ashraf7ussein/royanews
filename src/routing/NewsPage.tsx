@@ -1,7 +1,12 @@
 import React from "react";
+import NewsGrid from "../components/newsGrid/NewsGrid";
 
 const NewsPage = () => {
-  return <div>NewsPage</div>;
+  return (
+    <div>
+      <NewsGrid />
+    </div>
+  );
 };
 
 export default NewsPage;
