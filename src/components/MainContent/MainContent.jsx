@@ -10,16 +10,19 @@ const items = [
     img: cardImage,
     title: "Trump flexes military might at parade as protests sweep US",
     date: "7 hours ago",
+    category: "World",
   },
   {
     img: img7,
     title: "What is America's 'No Kings Day' protest?",
-    date: "7 hours ago",
+    date: "09-06-2025 16:15",
+    category: "World",
   },
   {
     img: img8,
     title: "EgyptAir suspends flights to Beirut, Amman, Baghdad, Erbil",
-    date: "7 hours ago",
+    date: "09-06-2025 17:55",
+    category: "MENA",
   },
 ];
 
@@ -34,6 +37,7 @@ const MainContent = () => {
             LIVE UPDATES | 'Israel' strikes Iran: Top commanders killed,
             retaliation begins
           </p>
+          <p className={styles.imageDate}>15-06-2025</p>
         </div>
 
         <div className={styles.cardColumn}>

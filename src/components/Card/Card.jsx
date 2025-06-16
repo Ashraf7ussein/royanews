@@ -12,7 +12,7 @@ const Card = ({ card }) => {
           <div className={styles.text}>
             <p>{card.date}</p>
             <span className={styles.spacer}>|</span>
-            <p className={styles.category}>World</p>
+            <p className={styles.category}>{card.category}</p>
           </div>
 
           <p>{card.title}</p>
