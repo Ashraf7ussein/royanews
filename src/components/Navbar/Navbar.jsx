@@ -7,6 +7,7 @@ import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { LuTv } from "react-icons/lu";
 
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 const tabs = [
   "Home",
@@ -49,7 +50,9 @@ const Navbar = () => {
 
       <div className={styles.topRow}>
         <div className={styles.logoContainer}>
-          <img src={logo} className={styles.logo} alt="Roya News Logo" />
+          <Link to={"/"}>
+            <img src={logo} className={styles.logo} alt="Roya News Logo" />
+          </Link>
           <span className={styles.logoText}>Roya News</span>
         </div>
 
