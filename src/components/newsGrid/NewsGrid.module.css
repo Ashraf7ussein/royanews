@@ -40,3 +40,9 @@
   color: #ddd;
   font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
